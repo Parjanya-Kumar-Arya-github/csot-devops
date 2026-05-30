@@ -1,0 +1,6 @@
+[Unit]
+Description= Wolex Service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/echo "Hello World"
