@@ -1,0 +1,7 @@
+[Unit]
+Description=System Health Monitor (one-shot)
+[Service]
+Type=oneshot
+ExecStart=/mnt/d/CSOT-Projects/csot-devops/submission/Mini-project1/build1/healthmon.sh
+StandardOutput=journal
+StandardError=journal

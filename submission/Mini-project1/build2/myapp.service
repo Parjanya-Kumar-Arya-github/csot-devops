@@ -1,0 +1,17 @@
+[Unit]
+Description=CSOT Demo App
+After=network.target
+
+[Service]
+Type=simple
+User=sumit
+WorkingDirectory=/home/sumit/myapp
+ExecStart=/usr/bin/python3 /mnt/d/CSOT-Projects/csot-devops/submission/Mini-project1/build2/server.py
+Restart=on-failure
+RestartSec=3
+Environment=PORT=8000
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
